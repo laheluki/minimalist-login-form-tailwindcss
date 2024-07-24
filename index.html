@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form - TailwindCSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="py-12" style="font-family: Poppins;">
+    <div class="relative mx-auto w-full max-w-md bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 rounded-xl">
+        <div class="w-full">
+
+            <!-- title -->
+            <div class="text-center">
+                <h1 class="text-3xl font-semibold text-gray-900">Sign In</h1>
+                <p class="mt-2 text-gray-500">sign in to access your account</p>
+            </div>
+
+            <!-- Social Login -->
+            <div class="grid grid-cols-2 gap-6 mt-4 px-5">
+                <button
+                    class="flex justify-center items-center hover:scale-105 ease-in-out duration-300 shadow-lg p-2 rounded-lg hover:border">
+                    <img src="./img/google.png" alt="Google Icon" class="h-5 w-5">
+                    <span class="ms-2">Google</span>
+                </button>
+                <button
+                    class="flex justify-center items-center hover:scale-105 ease-in-out duration-300 shadow-lg p-2 rounded-lg hover:border">
+                    <img src="./img/github.png" alt="Google Icon" class="h-5 w-5">
+                    <span class="ms-2">Github</span>
+                </button>
+            </div>
+
+            <!-- Separator -->
+            <div class="px-5 my-6">
+                <div class="border-b flex text-center items-center justify-center">
+                    <div
+                        class="leading-none px-2 inline-block text-sm text-gray-800 tracking-wide font-medium bg-white transform translate-y-1/2 uppercase">
+                        or continue with
+                    </div>
+                </div>
+            </div>
+
+            <!-- form -->
+            <form action="" class="mt-5 px-5">
+                <div class="relative mt-6">
+                    <label for="email" class="mt-2 text-lg">Email</label>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com"
+                        class="w-full border p-3 shadow-md focus:scale-105 ease-in-out duration-300 border-gray-300 rounded-lg"
+                        autocomplete="off" required>
+                </div>
+
+                <div class="relative mt-6">
+                    <label for="password" class="mt-2 text-lg">Password</label>
+                    <input type="password" name="password" id="password" placeholder="**********"
+                        class="w-full border p-3 shadow-md focus:scale-105 ease-in-out duration-300 border-gray-300 rounded-lg"
+                        autocomplete="off" required>
+                </div>
+
+                <div class="flex items-center my-3 justify-between">
+                    <div class="flex justify-center items-center">
+                        <input type="checkbox" name="remember-me" id="remember-me"
+                            class="cursor-pointer w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
+                        <label for="remember-me" class="cursor-pointer ms-2 text-sm font-medium text-gray-900">Remember
+                            me</label>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <a href="" class="group text-blue-500 transition-all duration-100 ease-in-out">
+                            <span
+                                class="bg-left-bottom bg-gradient-to-r text-sm from-blue-500 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">Forgot
+                                your password?</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- button submit -->
+                <div class="mt-6">
+                    <button
+                        class="uppercase w-full bg-gradient-to-r from-cyan-500 to-blue-500 shadow-lg p-2 text-white rounded-lg hover:scale-105 hover:from-blue-500 hover:to-cyan-500 transition duration-300 ease-in-out">Sign
+                        In</button>
+                </div>
+            </form>
+            <!-- dont have an account -->
+            <div class="flex items-center justify-center mt-2 text-sm">
+                <h3>Don't have an account?</h3>
+                <a href="" class="group text-blue-500 transition-all duration-100 ease-in-out">
+                    <span
+                        class="ms-1 bg-left-bottom bg-gradient-to-r text-sm from-blue-500 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">Sign
+                        Up!</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
